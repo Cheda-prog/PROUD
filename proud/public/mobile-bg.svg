@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMax slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d0824"/>
+      <stop offset="0.35" stop-color="#2a1550"/>
+      <stop offset="0.6" stop-color="#7a2a6e"/>
+      <stop offset="0.75" stop-color="#d4506a"/>
+      <stop offset="0.85" stop-color="#f59a52"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe08a"/>
+      <stop offset="1" stop-color="#ff6f61"/>
+    </linearGradient>
+    <radialGradient id="sphere" cx="0.35" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#7fd6ff"/>
+      <stop offset="0.5" stop-color="#4a5cff"/>
+      <stop offset="1" stop-color="#2a1260"/>
+    </radialGradient>
+    <linearGradient id="haze" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d0824" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0d0824" stop-opacity="0.9"/>
+    </linearGradient>
+    <pattern id="win" width="22" height="30" patternUnits="userSpaceOnUse">
+      <rect x="7" y="9" width="8" height="12" fill="#ffd27a" opacity="0.75"/>
+    </pattern>
+    <pattern id="winDim" width="22" height="30" patternUnits="userSpaceOnUse">
+      <rect x="7" y="9" width="8" height="12" fill="#ff9fd0" opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <!-- sky -->
+  <rect width="1080" height="1920" fill="url(#sky)"/>
+
+  <!-- stars -->
+  <g fill="#fff">
+    <circle cx="90" cy="120" r="2.5" opacity="0.8"/>
+    <circle cx="240" cy="260" r="1.8" opacity="0.6"/>
+    <circle cx="410" cy="90" r="2.2" opacity="0.9"/>
+    <circle cx="560" cy="210" r="1.5" opacity="0.5"/>
+    <circle cx="700" cy="70" r="2.8" opacity="0.8"/>
+    <circle cx="860" cy="180" r="1.8" opacity="0.7"/>
+    <circle cx="1000" cy="300" r="2.2" opacity="0.6"/>
+    <circle cx="150" cy="420" r="1.6" opacity="0.5"/>
+    <circle cx="330" cy="520" r="2" opacity="0.4"/>
+    <circle cx="640" cy="400" r="1.7" opacity="0.6"/>
+    <circle cx="930" cy="480" r="2.4" opacity="0.5"/>
+    <circle cx="790" cy="610" r="1.5" opacity="0.35"/>
+    <circle cx="60" cy="660" r="1.8" opacity="0.35"/>
+    <circle cx="480" cy="700" r="1.5" opacity="0.3"/>
+  </g>
+
+  <!-- sun -->
+  <circle cx="540" cy="1390" r="230" fill="url(#sun)"/>
+  <g fill="#d4506a">
+    <rect x="300" y="1420" width="480" height="8"/>
+    <rect x="300" y="1460" width="480" height="12"/>
+    <rect x="300" y="1504" width="480" height="16"/>
+  </g>
+
+  <!-- low-poly mountains -->
+  <polygon points="0,1560 0,1380 140,1300 260,1420 380,1340 520,1480 520,1560" fill="#5b2766"/>
+  <polygon points="140,1300 260,1420 180,1440" fill="#6e3078"/>
+  <polygon points="380,1340 520,1480 420,1470" fill="#6e3078"/>
+  <polygon points="520,1560 600,1440 720,1360 860,1460 960,1330 1080,1410 1080,1560" fill="#4a1f58"/>
+  <polygon points="720,1360 860,1460 760,1470" fill="#5b2766"/>
+  <polygon points="960,1330 1080,1410 1000,1430" fill="#5b2766"/>
+
+  <!-- Luxor pyramid + beam -->
+  <line x1="200" y1="1630" x2="200" y2="0" stroke="#bfe8ff" stroke-width="5" opacity="0.25"/>
+  <polygon points="30,1920 200,1630 370,1920" fill="#1f1238"/>
+  <polygon points="200,1630 370,1920 260,1920" fill="#2b1a4a"/>
+
+  <!-- hotel towers -->
+  <g fill="#1a0f30">
+    <rect x="300" y="1560" width="110" height="360"/>
+    <rect x="420" y="1470" width="90" height="450"/>
+    <rect x="720" y="1510" width="120" height="410"/>
+    <rect x="960" y="1600" width="120" height="320"/>
+  </g>
+  <rect x="300" y="1560" width="110" height="360" fill="url(#win)"/>
+  <rect x="420" y="1470" width="90" height="450" fill="url(#winDim)"/>
+  <rect x="720" y="1510" width="120" height="410" fill="url(#win)"/>
+  <rect x="960" y="1600" width="120" height="320" fill="url(#winDim)"/>
+  <!-- penthouse glow on the tallest tower -->
+  <rect x="420" y="1470" width="90" height="10" fill="#ff5fa2"/>
+
+  <!-- the Sphere -->
+  <circle cx="610" cy="1720" r="105" fill="url(#sphere)"/>
+  <circle cx="610" cy="1720" r="105" fill="none" stroke="#9fe4ff" stroke-width="3" opacity="0.6"/>
+
+  <!-- Stratosphere tower -->
+  <line x1="915" y1="1250" x2="915" y2="1330" stroke="#1a0f30" stroke-width="6"/>
+  <polygon points="905,1920 910,1380 920,1380 925,1920" fill="#1a0f30"/>
+  <ellipse cx="915" cy="1370" rx="46" ry="22" fill="#1a0f30"/>
+  <rect x="875" y="1366" width="80" height="4" fill="#ffd27a" opacity="0.8"/>
+  <circle cx="915" cy="1250" r="5" fill="#ff5f5f"/>
+
+  <!-- foreground low buildings -->
+  <g fill="#120a24">
+    <rect x="0" y="1800" width="160" height="120"/>
+    <rect x="360" y="1830" width="200" height="90"/>
+    <rect x="640" y="1810" width="140" height="110"/>
+    <rect x="840" y="1840" width="240" height="80"/>
+  </g>
+
+  <!-- ground haze so content at the bottom stays readable -->
+  <rect y="1500" width="1080" height="420" fill="url(#haze)"/>
+</svg>
